@@ -1,0 +1,162 @@
+/*******************************************************************************************************************
+*  Author: Tomas Lach (www.tomaslach.cz)                                                                           
+*  Date: 23.07.2012                                                                                                
+*******************************************************************************************************************/
+
+/*******************************************************************************************************************
+*  IMPORT OTHER STYLES                                                                                             
+*******************************************************************************************************************/
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Podkova:700);
+
+/*******************************************************************************************************************
+*  BASE                                                                                                            
+*******************************************************************************************************************/
+html {background: #ededed}
+body {color: #666666;font: normal 13px "Helvetice Neue", Arial, Tahoma, Verdana;}
+p {line-height: 1.5em;margin-bottom: 15px}
+address {font-style: normal;padding-bottom: 15px;}
+
+/*******************************************************************************************************************
+*  LINKS                                                                                                           
+*******************************************************************************************************************/
+a, a:link, a:focus {color: #000;outline: 0;}
+a:hover {color: #ce238a;text-decoration: underline}
+a.more {padding-right: 15px;background: url('../img/more.png') no-repeat 100% 50%}
+
+/*******************************************************************************************************************
+*  H1 - H4                                                                                                         
+*******************************************************************************************************************/
+h1, h2, h3, h4 {font-family: "Podkova", Arial, Tahoma, Verdana;line-height: 1.2em;margin-bottom: 15px;font-weight: 700}
+h1 {font-size: 3.0em;color: #fff;text-shadow: 2px 2px 2px #c62485;} 
+h2 {font-size: 1.8em;margin-bottom: 25px;}
+h3 {font-size: 1.2em;margin-bottom: 5px;font-family: "Helvetice Neue", Arial, Tahoma, Verdana;;}
+h4 {font-size: 1.6em;color: #999999;}
+
+/*******************************************************************************************************************
+*  HEADER                                                                                                          
+*******************************************************************************************************************/
+header {height: 100px;line-height: 100px;background: #fff;position: relative;} 
+header a#logo {font-size: 3.0em;font-weight: bold;display: block;position: absolute;top: 0;left: 0;color: #848484;text-decoration: none;}
+header a#logo span {color: #000}
+header a#logo:hover {text-decoration: none;color: #000}
+header nav ul {position: absolute;top: 0;right: 0}
+header nav li {float: left;background: url('../img/nav-sep.png') no-repeat 0 50%;}
+header nav li:first-child {background: none;}
+header nav li a {float: left;color: #000;display: block;height: 100px;padding: 0 20px;font-weight: 100;}
+header nav li.active a {cursor: pointer;font-weight: 600;text-decoration: none;} 
+header nav li a:hover {text-decoration: none;}
+
+#intro {background:#D00000 no-repeat 50% 0;padding: 55px 0;}
+#intro p {color: #ffffff;margin-bottom: 20px;padding-right: 340px;text-shadow: 2px 2px 2px #c62485;}
+
+#subIntro {background: #272727 url('../img/subintro-bg.png') repeat-x;padding: 40px 0;position: relative}
+#subIntro h2 {color: #979797; margin-bottom: 20px; }
+#subIntro .withIcon {padding-left: 35px;}
+#subIntro .icon1 {background: url('../img/icon1.png') no-repeat 0 50%}
+#subIntro .icon2 {background: url('../img/icon2.png') no-repeat 0 50%}
+#subIntro .icon3 {background: url('../img/icon3.png') no-repeat 0 50%}
+#subIntro p {color: #e3e3e3;padding-top: 5px;}
+
+/*******************************************************************************************************************
+*  CONTENT                                                                                                         
+*******************************************************************************************************************/
+#content {padding: 40px 0 50px}
+#content .cite {padding-left: 70px;font-style: italic;background: url('../img/cite.png') no-repeat 0 5px;}
+#content .cite strong {font-style: normal;display: block;margin-top: 5px;}
+
+
+/*******************************************************************************************************************
+*  FOOTER                                                                                                          
+*******************************************************************************************************************/
+footer {padding: 30px 0;border-top: 1px solid #d9d9d9;background: #fff;font-size: 0.85em;}
+
+/*******************************************************************************************************************
+*  OTHER STYLES                                                                                                    
+*******************************************************************************************************************/
+.wrap {margin: 0 auto;position: relative;width: 980px}
+.mask {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+a.thumb img, img.thumb {display: block;margin-bottom: 10px;border: 1px solid #dcdcdc;padding: 4px}
+a.thumb:hover img {border-color: #d1d1d1}
+
+.col1-3 {width: 316px;margin-left: 16px;float: left}
+.col1-3 p:last-child, 
+.col2-3 p:last-child {margin-bottom: 0}
+.col1-3:first-child {margin-left: 0}
+.col1-4 {width: 233px;margin-left: 16px;float: left}
+.col2-4 {width: 482px;margin-left: 16px;float: left}
+.col1-4:first-child {margin-left: 0}
+.col2-4:first-child {margin-left: 0}
+.col1-3 p, .col2-3 p, .col1-4 p, .col2-4 p {padding-right: 20px;}
+.date {font-size: 11px;color: #999999;text-shadow: 1px 1px 1px #fff;display: block;margin-bottom: 5px }
+.box {margin-bottom: 40px;}
+.inner5 {padding: 5px;}
+
+/* INPUT FIELD CSS Copy this to your style sheet
+------------------------------------------------------------- */
+
+#contact-form input {
+	display: block;
+	width: 400px;
+	height: 25px;
+	/*height: 15px\0/;*/
+	text-align: left;
+	border: 0;
+	padding: 5px 10px;
+	/*padding: 10px 10px\0/;*/
+	margin-bottom: 1px;
+	background-color: #FFFFFF;
+	color: #565656;
+	font-size: 12px;
+}
+#contact-form textarea {
+	display: block;
+	border: none;
+	width: 400px;
+	height: 123px;
+	clear: both;
+	border: 0;
+	padding: 10px;
+	margin: 0;
+	background-color: #FFFFFF;
+	color: #565656;
+	font-size: 12px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+#contact-form textarea:hover {
+	border:none;
+}
+#contact-form input#submit-button {
+	clear:both;
+	margin:0px;
+	text-align: center;
+	margin: 0px 5px 0 0;
+	width: auto;
+	background: transparent url('../img/submit.png') no-repeat;
+	color: #FFF;
+	position: relative;
+	z-index: 9999;
+	padding: 0;
+	height: 32px;
+	padding-bottom: 2px;
+	width: 120px;
+	font-size: 14px;
+	cursor: pointer;
+}
+#contact-form p {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#contact-form p label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 35px;
+	padding: 0 0 0 10px;
+	font-size: 12px;
+}
+#contact-form p br {
+	display: none;
+}
+

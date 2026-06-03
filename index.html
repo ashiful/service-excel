@@ -1,138 +1,154 @@
 <!doctype html>
-<html lang="cs">
-	<head>
-		<meta charset="utf-8">
-		<title>Service Excel</title>
-		<link rel="stylesheet" href="css/main.css" media="screen,projection">
-	</head>
-	<body>
-		<header>
-			<div class="wrap">
-				<b><a id="logo" href="./"><span>service</span><i>Excel</i></a> </b>
-				<hr>
-				<nav>
-					<ul>
-						<li class="active">
-							<a href="./" title="Home">Home</a>
-						</li>
-						<li>
-							<a href="#service" title="Service"> Service</a>
-						</li>
-						<li>
-							<a href="#contact" title="Contact">Contact</a>
-						</li>
-					</ul>
-				</nav>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Excel</title>
+  <link rel="stylesheet" href="css/main.css" media="screen,projection">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a id="logo" href="./" aria-label="Service Excel">
+        <img src="img/logo-new.png" alt="Service Excel">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="./" title="Home">Home</a></li>
+          <li><a href="#service" title="Services">Services</a></li>
+          <li><a href="#contact" title="Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-			</div>
-		</header>
-		<hr>
-		<!--  Begin Intro -->
-		<div id="intro">
-			<div class="wrap clearFix">
-				<h1>SERVICE EXCEL
-				<br>
-				IT SOLUTIONS</h1>
+  <section id="intro">
+    <div class="wrap">
+      <h1>A trusted partner to outsource your IT support</h1>
+      <p>
+        Service Excel helps organizations run stable, secure, and reliable IT operations through practical outsourced
+        support services tailored to each business.
+      </p>
+      <p>
+        Our core services include dedicated IT support personnel, responsive helpdesk and user support, and system and
+        infrastructure support for day-to-day continuity, along with data entry and back-office support.
+      </p>
+      <p>
+        Whether you need one engineer or a full support team, we adapt to your operations and improve uptime, response
+        quality, and user experience across your organization.
+      </p>
+    </div>
+  </section>
 
-				<p>
-					Service Excel - IT Solutions is a company that can help you to excel in you IT service. Based on your
-					requirement we can provide quick software solution. However 'Quick' does not mean we compromise with
-					quality. Our expertise allows us to deliver quality software application using PHP, Java, C/C++ technology
-					in a quick notice. We also deliver rapid apps for Android or iOS based SmartPhone and Tablet.
+  <section id="subIntro">
+    <div class="wrap">
+      <h2 id="service">Our Services</h2>
+      <div class="services">
+        <article class="service-card">
+          <h3><span class="service-icon icon-personnel" aria-hidden="true">IT</span>IT Support Personnel</h3>
+          <p>Skilled, dedicated support engineers assigned to your business needs.</p>
+        </article>
+        <article class="service-card">
+          <h3><span class="service-icon icon-helpdesk" aria-hidden="true">HD</span>Helpdesk &amp; User Support</h3>
+          <p>Fast response for day-to-day technical issues and requests.</p>
+        </article>
+        <article class="service-card">
+          <h3><span class="service-icon icon-infra" aria-hidden="true">SI</span>System &amp; Infra Support</h3>
+          <p>Monitoring, maintenance, and incident handling for reliable operations.</p>
+        </article>
+        <article class="service-card">
+          <h3><span class="service-icon icon-data-entry" aria-hidden="true">DE</span>Data Entry &amp; Back-Office Support</h3>
+          <p>Reliable data entry operators for accurate, timely processing of business records and routine tasks.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-					You may need to develop a quick software prototype or you may need to bring a quick solution to lead in the
-					market, we are there for you. Let us know your requirement. We will hear you and bring you a quick solution.
+  <main id="content" class="wrap">
+    <section>
+      <h2 id="contact">Contact Us</h2>
+      <div id="contact-form">
+        <form id="contact_form" action="#" method="post" enctype="multipart/form-data" novalidate>
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required>
 
-					See below our services.
-				</p>
-			</div>
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" required>
 
-		</div>
-		<!-- End of intro -->
-		<hr>
-		<!-- Begin subintro -->
-		<div id="subIntro">
-			<a id="service" name="service"></a>
-			<div class="wrap clearFix">
-				<div class="col1-3">
-					<h2 class="withIcon icon2">Android/ IOS App </h2>
-					<p>
-						Making Android or iOS apps for Smart Phone and Tablet.
-					</p>
-				</div>
-				<div class="col1-3">
-					<h2 class="withIcon icon1">Java/ C#</h2>
-					<p>
-						Building custom based software application with Java or C#.net.
-					</p>
-				</div>
-				<div class="col1-3">
-					<h2 class="withIcon icon3">PHP Application</h2>
-					<p>
-						Developing Web based application using PHP and its framework like Zend.
-					</p>
-				</div>
-			</div>
-		</div>
-		<!-- End of subintro -->
-		<hr>
-		<div id="content" class="wrap">
-			<div class="clearFix">
-				<div class="col2-4">
-					<a id="contact" name="contact"></a>
-					<h4>Contact Us</h4>
-					<!-- Begin contact form -->
-					<div id="contact-form">
-						<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-							<label for="name">Your name:</label>
-							<br/>
-							<input id="name" class="input" name="name" type="text" value="" size="30"/>
-							<br/>
-							<label for="email">Your email:</label>
-							<br/>
-							<input id="email" class="input" name="email" type="text" value="" size="30"/>
-							<br/>
-							<label for="message">Your message:</label>
-							<br/>
-							<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea>
-							<br/>							
-							<input id="submit-button" type="submit" value="Send Message"/>
-						</form>
-					</div>
-					<!-- End of contact form -->
-				</div>
-				<div class="col2-4">
-					<h4>Head Office</h4>
-					<p>
-						Shenpara Parbata 169
-						<br/>
-						Mirpur 10, Dhaka 1216
-						<br/>
-						Bangladesh
-						<br/>
-						<span class="highlight3">Tel:</span> +880 155 239 40 14
-					</p>
-				</div>
-				<div class="col2-4">
-					<h4>Netherlands corrospond</h4>
-					<p>
-						Beethovenweg 29B
-						<br/>
-						3816 MC, Amersfoort
-						<br/>
-						the Netherlands
-						<br/>
-						<span class="highlight3">Tel:</span> +31 (0) 626 714 742
-					</p>
-				</div>
-			</div>
-		</div>
-		<!-- / #content -->
-		<hr>
-		<footer>
-			<div class="wrap">
-				Copyright &copy; 2015 Service Excel IT Solutins
-			</div>
-		</footer>
-	</body>
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <input id="submit-button" type="submit" value="Send Message">
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="office-grid">
+      <article>
+        <h3>Head Office</h3>
+        <p>
+          Shenpara Parbata 169<br>
+          Mirpur 10, Dhaka 1216<br>
+          Bangladesh<br>
+          Tel: +880 155 239 40 14
+        </p>
+      </article>
+      <article>
+        <h3>Netherlands Correspondent</h3>
+        <p>
+          Tel: +31 (0) 626 714 742
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Copyright &copy; <span id="current-year">2015</span> Service Excel IT Solutions |
+      <a href="mailto:info@service-excel.net">info@service-excel.net</a> |
+      <a href="https://www.linkedin.com/company/service-excel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var yearElement = document.getElementById("current-year");
+      var form = document.getElementById("contact_form");
+      var status = document.getElementById("form-status");
+      var recipient = "info@service-excel.net";
+
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+
+      if (!form || !status) {
+        return;
+      }
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var name = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var message = document.getElementById("message").value.trim();
+
+        if (!name || !email || !message) {
+          status.textContent = "Please complete all fields before sending.";
+          return;
+        }
+
+        var subject = encodeURIComponent("Website contact from " + name);
+        var body = encodeURIComponent(
+          "Name: " + name + "\n" +
+          "Email: " + email + "\n\n" +
+          "Message:\n" + message
+        );
+
+        status.textContent = "Opening your email app...";
+        window.location.href = "mailto:" + recipient + "?subject=" + subject + "&body=" + body;
+      });
+    })();
+  </script>
+</body>
 </html>
